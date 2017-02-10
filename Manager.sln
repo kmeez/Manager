@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Manager\Manager.csproj", "{E613D633-955E-478F-8D5D-C9D1866D83EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerModel", "ManagerModel\ManagerModel.csproj", "{E892205D-079A-4800-9BCE-E1A1672608B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E613D633-955E-478F-8D5D-C9D1866D83EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E613D633-955E-478F-8D5D-C9D1866D83EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E613D633-955E-478F-8D5D-C9D1866D83EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E613D633-955E-478F-8D5D-C9D1866D83EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E892205D-079A-4800-9BCE-E1A1672608B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E892205D-079A-4800-9BCE-E1A1672608B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E892205D-079A-4800-9BCE-E1A1672608B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E892205D-079A-4800-9BCE-E1A1672608B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

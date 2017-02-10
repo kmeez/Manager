@@ -1,0 +1,52 @@
+﻿<Window x:Class="Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Portfolio Manager" Height="350" Width="525">
+    <Grid>
+        <DockPanel Background="LightBlue">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New" />
+                    <MenuItem Header="_Open" />
+                </MenuItem>
+            </Menu>
+            <StackPanel Background="Red" DockPanel.Dock="Left">
+                <ListBox Name="ListBoxMain" ItemsSource="{Binding Prices}" SelectedItem="{Binding SelectedItem}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <Label Content="{Binding Symbol}" DockPanel.Dock="Left" />
+                                <Label Content="{Binding Name}" />
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+            </StackPanel>
+            <StackPanel Background="Orange" DockPanel.Dock="Right">
+                <TextBlock> Text </TextBlock>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom">
+                <StackPanel DataContext="{Binding SelectedItem}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock> Bid:</TextBlock>
+                        <TextBlock Text="{Binding Bid}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock> Ask: </TextBlock>
+                        <TextBlock Text="{Binding Ask}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock> Previous Close: </TextBlock>
+                        <TextBlock Text="{Binding PreviousClose}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock> Open: </TextBlock>
+                        <TextBlock Text="{Binding Open}" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            
+        </DockPanel>
+    </Grid>
+</Window>
